@@ -55,7 +55,7 @@ public class LoginTest extends CreateAndDeleteUserTest {
   @DisplayName("Проверка входа через кнопку в форме восстановления пароля")
   @Description("В конце теста проверяется отображение кнопки создания заказа на главной странице")
   public void checkLoginThroughForgotPasswordForm() {
-    boolean isCreateOrderButtonDisplayed =  new ForgotPasswordPage(driver)
+    boolean isCreateOrderButtonDisplayed = new ForgotPasswordPage(driver)
         .open()
         .clickLoginLink()
         .setEmail(user.getEmail())

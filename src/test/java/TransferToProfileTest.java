@@ -6,6 +6,7 @@ import org.junit.Test;
 import pages.LoginPage;
 
 public class TransferToProfileTest extends CreateAndDeleteUserTest {
+
   @Test
   @DisplayName("Проверка перехода в личный кабинет по кнопке «Личный кабинет»")
   @Description("В конце проверяется наличие текста «Профиль»")

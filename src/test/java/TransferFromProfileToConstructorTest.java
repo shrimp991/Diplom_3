@@ -10,7 +10,7 @@ public class TransferFromProfileToConstructorTest extends CreateAndDeleteUserTes
   @Test
   @DisplayName("Проверка перехода из личного кабинета в конструктор по клику на «Конструктор»")
   @Description("В конце проверяется, что отображается кнопка формирования заказа")
-  public void checkTransferThroughConstructorButton(){
+  public void checkTransferThroughConstructorButton() {
     boolean isCreateOrderButtonDisplayed = new LoginPage(driver)
         .open()
         .setEmail(user.getEmail())

@@ -1,3 +1,4 @@
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import io.qameta.allure.Description;
@@ -10,30 +11,30 @@ public class ConstructorTest extends BaseUiTest {
   @Test
   @DisplayName("Проверка перехода к разделу \"Булки\"")
   @Description("Проверяется, что при нажатии на вкладку \"Булки\" изменяется наименование класса")
-  public void checkBunsSectionButtonClick(){
-    boolean isBunsSectionButtonSelectedDisplayed = new MainPage(driver)
+  public void checkBunsSectionButtonClick() {
+    String actualClassNameAfterClickSection = new MainPage(driver)
         .open()
-        .isBunsSectionButtonSelectedDisplayed();
-    assertTrue("Button is not selected", isBunsSectionButtonSelectedDisplayed);
+        .getClassNameAfterClickBunsSection();
+    assertEquals("Incorrect value", MainPage.expectedClassName, actualClassNameAfterClickSection);
   }
 
   @Test
   @DisplayName("Проверка перехода к разделу \"Соусы\"")
   @Description("Проверяется, что при нажатии на вкладку \"Соусы\" изменяется наименование класса")
-  public void checkSaucesSectionButton(){
-    boolean isSaucesSectionButtonSelectedDisplayed = new MainPage(driver)
+  public void checkSaucesSectionButton() {
+    String actualClassNameAfterClickSection = new MainPage(driver)
         .open()
-        .isSaucesSectionButtonSelectedDisplayed();
-    assertTrue("Button is not selected", isSaucesSectionButtonSelectedDisplayed);
+        .getClassNameAfterClickSaucesSection();
+    assertEquals("Incorrect value", MainPage.expectedClassName, actualClassNameAfterClickSection);
   }
 
   @Test
   @DisplayName("Проверка перехода к разделу \"Начинки\"")
   @Description("Проверяется, что при нажатии на вкладку \"Начинки\" изменяется наименование класса")
-  public void checkFillingsSectionButton(){
-    boolean isFillingsSectionButtonSelectedDisplayed = new MainPage(driver)
+  public void checkFillingsSectionButton() {
+    String actualClassNameAfterClickSection = new MainPage(driver)
         .open()
-        .isFillingsSectionButtonSelectedDisplayed();
-    assertTrue("Button is not selected", isFillingsSectionButtonSelectedDisplayed);
+        .getClassNameAfterClickFillingsSection();
+    assertEquals("Incorrect value", MainPage.expectedClassName, actualClassNameAfterClickSection);
   }
 }

@@ -8,13 +8,13 @@ public class BaseUiTest {
   protected WebDriver driver;
 
   @Before
-  public void setUp(){
+  public void setUp() {
     System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
     driver = new ChromeDriver();
   }
 
   @After
-  public void tearDown(){
+  public void tearDown() {
     driver.quit();
   }
 }

@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class LoginPage extends BasePage{
+public class LoginPage extends BasePage {
 
   public static final String URL = "https://stellarburgers.nomoreparties.site/login";
   private By emailField = By.xpath("//label[text()='Email']/../input");

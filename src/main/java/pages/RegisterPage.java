@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class RegisterPage extends BasePage {
+
   public static final String URL = "https://stellarburgers.nomoreparties.site/register";
   private By nameField = By.xpath("//label[text()='Имя']/../input");
   private By emailField = By.xpath("//label[text()='Email']/../input");
@@ -16,7 +17,7 @@ public class RegisterPage extends BasePage {
     super(driver);
   }
 
-  public RegisterPage setName (String name) {
+  public RegisterPage setName(String name) {
     driver.findElement(nameField).sendKeys(name);
     return this;
   }

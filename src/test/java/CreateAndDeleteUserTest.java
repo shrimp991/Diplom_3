@@ -6,7 +6,7 @@ import org.junit.Before;
 
 public class CreateAndDeleteUserTest extends BaseUiTest {
 
-  protected  User user;
+  protected User user;
   protected UserClient userClient;
   protected String accessToken;
 

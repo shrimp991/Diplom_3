@@ -5,7 +5,7 @@ import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import pages.LoginPage;
 
-public class LogoutTest extends CreateAndDeleteUserTest{
+public class LogoutTest extends CreateAndDeleteUserTest {
 
   @Test
   @DisplayName("Проверка выхода по кнопке «Выйти» в личном кабинете")

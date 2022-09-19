@@ -12,6 +12,7 @@ import pages.LoginPage;
 import pages.MainPage;
 
 public class RegisterTest extends BaseUiTest {
+
   private User user;
   private UserClient userClient;
   private String accessToken;
@@ -27,7 +28,7 @@ public class RegisterTest extends BaseUiTest {
   @Test
   @DisplayName("Проверка, что пользователь может зарегистрироваться")
   @Description("В конце проверяется, что осуществлен редирект на страницу авторизации по URL")
-  public void checkUserCanRegister(){
+  public void checkUserCanRegister() {
     userClient = new UserClient();
     user = UserGenerator.getRandom();
     String currentUrl = new MainPage(driver)
